@@ -1,3 +1,11 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 8: Música arcade
+---------------------------------------
+Se reproduce la melodía Korobéiniki del Tetris.
+"""
+
 from machine import Pin, PWM
 from time import sleep_ms
 

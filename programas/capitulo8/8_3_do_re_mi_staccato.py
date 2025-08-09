@@ -1,3 +1,12 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 8: Música arcade
+---------------------------------------
+Se reprducen las notas do-ro-mi,
+separadas por un breve silencio.
+"""
+
 from machine import Pin, PWM
 from time import sleep_ms
 

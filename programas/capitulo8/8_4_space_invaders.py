@@ -1,3 +1,12 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 8: Música arcade
+---------------------------------------
+Se reprducen en bucle las notas mi-fa-fa#-sol
+de Space Invaders.
+"""
+
 from machine import Pin, PWM
 from time import sleep_ms
 
