@@ -3,8 +3,7 @@ MICROPYTHON EN PROYECTOS
 Beatriz Padín / Adriana Dapena
 Capítulo 4: Los módulos integrados
 ---------------------------------------
-Se programa una cuenta atrás para ilustrar
-cómo medir tiempos con precisión.
+Se programa una cuenta atrás usando sleep().
 """
 
 from time import sleep

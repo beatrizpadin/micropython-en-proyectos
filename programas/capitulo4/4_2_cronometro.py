@@ -9,9 +9,11 @@ cómo medir tiempos con precisión.
 
 from time import ticks_ms, ticks_diff
 
+print("--------------------------------------")
 print("Haz clic en la consola para activarla.")
 print("START: Pulsa la tecla Intro para iniciar el cronómetro.")
 print("STOP: Vuelve a pulsar Intro para pararlo.")
+print("--------------------------------------")
 
 # Inicio
 input()
