@@ -1,3 +1,14 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 10: Data logger
+---------------------------------------
+Se registra la temperatura medida por el sensor TMP36
+con la Raspberry Pi Pico.
+Los datos se guardan en un archivo.
+El led parapadea cada vez que se toma una medida.
+"""
+
 import os
 from machine import Pin, ADC
 from time import sleep, sleep_ms
@@ -26,7 +37,6 @@ def medir_temperatura():
     suma = 0
     num = 20
     while i <= num:
-        # Raspberry Pi Pico
         voltaje = TMP36.read_u16()*3.3/65535
         suma += voltaje
         i += 1

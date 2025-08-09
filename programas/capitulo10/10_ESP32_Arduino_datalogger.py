@@ -1,3 +1,14 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 10: Data logger
+---------------------------------------
+Se registra la temperatura medida por el sensor TMP36
+con el ESP32 o el Arduino Nano ESP32.
+Los datos se guardan en un archivo.
+El led parapadea cada vez que se toma una medida.
+"""
+
 import os
 from machine import Pin, ADC
 from time import sleep, sleep_ms
@@ -51,5 +62,3 @@ while True:
     parpadeo()
     escribir_temperatura()
     sleep(INTERVALO)
-
-
