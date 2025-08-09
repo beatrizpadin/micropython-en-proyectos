@@ -1,3 +1,13 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 7: Rojo, verde y azul
+---------------------------------------
+Se enciende el led RGB usando PWM con los colores primarios
+(rojo, verde y azul) y secundarios (rojo+verde=amarillo,
+verde+azul=cian, rojo+azul=magenta).
+"""
+
 from machine import Pin, PWM
 from time import sleep
 

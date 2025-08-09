@@ -1,3 +1,12 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 7: Rojo, verde y azul
+---------------------------------------
+En el led RGB se añaden al rojo distintos porcentajes
+de azul para pasar gradualmente del rosa al magenta.
+"""
+
 from machine import Pin, PWM
 from time import sleep_ms
 

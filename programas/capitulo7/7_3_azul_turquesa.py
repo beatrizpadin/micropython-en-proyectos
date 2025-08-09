@@ -1,3 +1,11 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 7: Rojo, verde y azul
+---------------------------------------
+Se enciende el led RGB en color azul turquesa.
+"""
+
 from machine import Pin, PWM
 
 # Led RGB inicialmente apagado

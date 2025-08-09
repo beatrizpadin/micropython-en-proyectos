@@ -1,3 +1,11 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 7: Rojo, verde y azul
+---------------------------------------
+Se enciende un led usando PWM.
+"""
+
 from machine import Pin, PWM
 from time import sleep
 
