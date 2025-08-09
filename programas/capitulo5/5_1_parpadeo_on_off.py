@@ -1,3 +1,12 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 5: Señalización marítima
+---------------------------------------
+Se enciende un led de manera intermitente
+usando los métodos on() y off().
+"""
+
 from machine import Pin
 from time import sleep
 

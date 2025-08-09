@@ -1,3 +1,12 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 5: Señalización marítima
+---------------------------------------
+Se encienden dos ledes de manera intermitente.
+El tiempo se controla con la función sleep().
+"""
+
 from machine import Pin
 from time import sleep
 
