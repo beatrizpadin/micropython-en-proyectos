@@ -3,7 +3,7 @@ MICROPYTHON EN PROYECTOS
 Beatriz Padín / Adriana Dapena
 Capítulo 8: Música arcade
 ---------------------------------------
-Se reprducen las notas mi-fa-fa#-sol de Space Invaders
+Se reproducen las notas mi-fa-fa#-sol de Space Invaders
 cada vez más rápido. Cuando se alcanza el tempo máximo
 se vuelve a empezar.
 """

@@ -3,7 +3,7 @@ MICROPYTHON EN PROYECTOS
 Beatriz Padín / Adriana Dapena
 Capítulo 8: Música arcade
 ---------------------------------------
-Se reprducen las notas do-ro-mi,
+Se interpretan las notas do-ro-mi,
 separadas por un breve silencio.
 """
 

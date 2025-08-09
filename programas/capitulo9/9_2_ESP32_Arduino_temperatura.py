@@ -1,3 +1,12 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 9: Cambio climático
+---------------------------------------
+Se lee la temperatura medida por el sensor TMP36
+con el ESP32 o el Arduino Nano ESP32.
+"""
+
 from machine import Pin, ADC
 from time import sleep
 
@@ -6,7 +15,6 @@ TMP36 = ADC(Pin(14))
 
 while True:
     # Temperatura en grados centígrados
-    # ESP32, Arduino Nano ESP32
     voltaje = TMP36.read_uv()/1000000
     temperatura = (voltaje - 0.5)*100
     print(round(temperatura, 1))

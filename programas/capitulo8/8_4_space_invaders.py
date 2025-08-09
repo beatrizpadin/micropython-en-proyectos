@@ -3,7 +3,7 @@ MICROPYTHON EN PROYECTOS
 Beatriz Padín / Adriana Dapena
 Capítulo 8: Música arcade
 ---------------------------------------
-Se reprducen en bucle las notas mi-fa-fa#-sol
+Se reproducen en bucle las notas mi-fa-fa#-sol
 de Space Invaders.
 """
 

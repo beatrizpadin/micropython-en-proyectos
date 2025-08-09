@@ -1,3 +1,13 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 9: Cambio climático
+---------------------------------------
+Se lee la temperatura medida por el sensor TMP36
+con el ESP32 o el Arduino Nano ESP32.
+Para suavizar las medidas se calcula la media de 20 valores.
+"""
+
 from machine import Pin, ADC
 from time import sleep_ms
 
@@ -9,7 +19,6 @@ def voltaje_medio():
     suma = 0
     num = 20
     while i <= num:
-        # ESP32, Arduino Nano ESP32
         voltaje = TMP36.read_uv()/1000000
         suma += voltaje
         i += 1
