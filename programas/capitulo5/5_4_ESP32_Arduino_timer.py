@@ -4,8 +4,8 @@ Beatriz Padín / Adriana Dapena
 Capítulo 5: Señalización marítima
 ---------------------------------------
 Se encienden dos ledes de manera intermitente.
-El tiempo se controla usando un timer del
-ESP32 o el Arduino Nano ESP32.
+El tiempo se controla usando el timer 0
+del ESP32 o el Arduino Nano ESP32.
 """
 
 from machine import Pin, Timer

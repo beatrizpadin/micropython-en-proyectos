@@ -1,3 +1,13 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 6: Lámpara de señales
+---------------------------------------
+Pulsador 1: Luz verde fija. Autorizado para aterrizar.
+Pulsador 2: Luz roja intermitente. Peligro, no aterrice.
+Pulsador 3: Luz alterna roja y verde. Extreme la precaución.
+"""
+
 from machine import Pin
 from time import sleep_ms
 

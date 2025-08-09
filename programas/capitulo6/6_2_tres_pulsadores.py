@@ -1,3 +1,12 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 6: Lámpara de señales
+---------------------------------------
+Se comprueba cuál de los tres pulsadores
+está siendo pulsado.
+"""
+
 from machine import Pin
 from time import sleep_ms
 

@@ -1,3 +1,13 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 6: Lámpara de señales
+---------------------------------------
+Se enciende y apaga el led usando un pulsador.
+El led se enciende únicamente mientras el botón esté pulsado
+y se apaga cuando se deja de pulsar. 
+"""
+
 from machine import Pin
 
 # Pulsador en el GPIO17

@@ -1,3 +1,13 @@
+"""
+MICROPYTHON EN PROYECTOS
+Beatriz Padín / Adriana Dapena
+Capítulo 6: Lámpara de señales
+---------------------------------------
+Se enciende y apaga el led usando un pulsador.
+El estado del led cambia de encendido a apagado, y viceversa,
+cada vez que se pulsa el botón.
+"""
+
 from machine import Pin
 from time import sleep_ms
 
