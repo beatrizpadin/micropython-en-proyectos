@@ -24,6 +24,11 @@ for i in range(0, 65536, 100):
     sleep_ms(5)
 
 # Se apaga el led
+LED_ROJO.duty_u16(0)
+LED_VERDE.duty_u16(0)
+LED_AZUL.duty_u16(0)
+
+# Se desactiva la señal
 LED_ROJO.deinit()
 LED_VERDE.deinit()
 LED_AZUL.deinit()

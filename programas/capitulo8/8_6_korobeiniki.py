@@ -3,7 +3,8 @@ MICROPYTHON EN PROYECTOS
 Beatriz Padín / Adriana Dapena
 Capítulo 8: Música arcade
 ---------------------------------------
-Se reproduce la melodía Korobéiniki del Tetris.
+Se reproduce la melodía "Korobéiniki" del Tetris.
+Partitura: https://www.flutetunes.com/
 """
 
 from machine import Pin, PWM

@@ -56,8 +56,11 @@ LED_AZUL.duty_u16(65535)
 sleep(1)
 
 # Se apaga el led
+LED_ROJO.duty_u16(0)
+LED_VERDE.duty_u16(0)
+LED_AZUL.duty_u16(0)
+
+# Se desactiva la señal
 LED_ROJO.deinit()
 LED_VERDE.deinit()
 LED_AZUL.deinit()
-
-

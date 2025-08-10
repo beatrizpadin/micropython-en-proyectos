@@ -13,7 +13,7 @@ from time import sleep_ms
 # Led conectado en el GPIO18, inicialmente apagado
 LED = Pin(18, Pin.OUT, value=0)
 
-# Tiempo de encendido y apagado
+# Tiempo de encendido y apagado (ms)
 INTERVALO = 100
 
 while True:
