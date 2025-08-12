@@ -13,8 +13,8 @@ import os
 from machine import Pin, ADC
 from time import sleep, sleep_ms
 
-# Sensor de temperatura TMP36 en el GPIO14
-TMP36 = ADC(Pin(14))
+# Sensor de temperatura TMP36 en el GPIO28
+TMP36 = ADC(Pin(28))
 
 # Led en el GPIO 18
 LED = Pin(18, Pin.OUT, value=0)
