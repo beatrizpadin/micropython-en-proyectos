@@ -10,8 +10,8 @@ en la Raspberry Pi Pico.
 from machine import Pin, ADC
 from time import sleep
 
-# Sensor de temperatura TMP36 conectado al GPIO14
-TMP36 = ADC(Pin(14))
+# Sensor de temperatura TMP36 conectado al GPIO28
+TMP36 = ADC(Pin(28))
 
 while True:
     # Lectura del voltaje en voltios

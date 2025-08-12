@@ -11,8 +11,8 @@ Para suavizar las medidas se calcula la media de 20 valores.
 from machine import Pin, ADC
 from time import sleep_ms
 
-# Sensor de temperatura TMP36 conectado al GPIO14
-TMP36 = ADC(Pin(14))
+# Sensor de temperatura TMP36 conectado al GPIO28
+TMP36 = ADC(Pin(28))
 
 def voltaje_medio():
     i = 1
