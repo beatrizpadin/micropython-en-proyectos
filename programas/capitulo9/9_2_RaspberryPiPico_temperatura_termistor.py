@@ -18,8 +18,8 @@ SENSOR = ADC(Pin(28))
 
 # Características del termistor
 T0 = 298.15
-B = 3950
 R0 = 10000
+B = 3950
 
 # Resistencia del divisor de voltaje
 Rs = 10000
