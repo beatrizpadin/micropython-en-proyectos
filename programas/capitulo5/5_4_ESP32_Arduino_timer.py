@@ -22,10 +22,14 @@ TIMER = Timer(0)
 # Intervalo de parpadeo (ms)
 INTERVALO = 500
 
+
 def parpadeo(t):
-    # Los ledes parpadean alternativamente
+    """
+    Los ledes parpadean alternativamente.
+    """
     LED_VERDE.value(not LED_VERDE.value())
     LED_ROJO.value(not LED_ROJO.value())
+
 
 # Se inicializa el timer
 TIMER.init(period = INTERVALO,

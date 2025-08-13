@@ -26,20 +26,30 @@ MI = 330
 DURACION_NOTA = 250
 DURACION_SILENCIO = 250
 
-# Nota musical
+
 def nota(frecuencia, duracion):
+    """
+    Interpreta una nota musical dada la frecuencia y la duración.
+    """
     ALTAVOZ.duty_u16(32768)
     ALTAVOZ.freq(frecuencia)
     sleep_ms(duracion)
 
-# Silencio  
+
 def silencio(duracion):
+    """
+    Interpreta un silencio de una duración determinada.
+    """
     ALTAVOZ.duty_u16(0)
     sleep_ms(duracion)
 
-# Se desactiva la señal
+
 def apagado():
+    """
+    Desactiva la señal PWM.
+    """
     ALTAVOZ.deinit()
+
 
 # Do
 nota(DO, DURACION_NOTA)

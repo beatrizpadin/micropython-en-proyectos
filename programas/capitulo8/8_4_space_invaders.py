@@ -25,16 +25,23 @@ SOL = 196
 DURACION_NOTA = 400
 DURACION_SILENCIO = 200
 
-# Nota musical
+
 def nota(frecuencia, duracion):
+    """
+    Interpreta una nota musical dada la frecuencia y la duración.
+    """
     ALTAVOZ.duty_u16(32768)
     ALTAVOZ.freq(frecuencia)
     sleep_ms(duracion)
 
-# Silencio  
+
 def silencio(duracion):
+    """
+    Interpreta un silencio de una duración determinada.
+    """
     ALTAVOZ.duty_u16(0)
     sleep_ms(duracion)
+
 
 while True:
     # Sol

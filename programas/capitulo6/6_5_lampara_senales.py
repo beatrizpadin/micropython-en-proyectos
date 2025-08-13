@@ -26,28 +26,41 @@ LED_ROJO = Pin(21, Pin.OUT, value=0)
 # Tiempo entre destellos (en ms)
 INTERVALO = 500
 
+
 def apagado():
-    # Se apagan ambos ledes
+    """
+    Ambos ledes apagados
+    """
     LED_VERDE.value(0)
     LED_ROJO.value(0)
-    
+
+
 def aterrice():
-    # Led verde fijo
+    """
+    Led verde fijo
+    """
     LED_VERDE.value(1)
-    
+
+
 def peligro():
-    # Led rojo intermitente
+    """
+    Led rojo intermitente
+    """
     LED_ROJO.value(not LED_ROJO.value())
     sleep_ms(INTERVALO)
 
+
 def precaucion():
-    # Led verde y rojo alternos
+    """
+    Led verde y rojo alternos
+    """
     LED_VERDE.value(1)
     LED_ROJO.value(0)
     sleep_ms(INTERVALO)
     LED_VERDE.value(0)
     LED_ROJO.value(1)
     sleep_ms(INTERVALO)
+
 
 while True:
     if PULSADOR_1.value() == 1 and PULSADOR_2.value() == 1 and PULSADOR_3.value() == 1:

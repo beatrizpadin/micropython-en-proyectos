@@ -34,19 +34,28 @@ INCREMENTO = 10
 # Se inicializa la variable tempo (bpm)
 tempo = TEMPO_0
 
-# Nota musical
+
 def nota(frecuencia, duracion):
+    """
+    Interpreta una nota musical dada la frecuencia y la duración.
+    """
     ALTAVOZ.duty_u16(32768)
     ALTAVOZ.freq(frecuencia)
     sleep_ms(duracion)
 
-# Silencio  
+
 def silencio(duracion):
+    """
+    Interpreta un silencio de una duración determinada.
+    """
     ALTAVOZ.duty_u16(0)
     sleep_ms(duracion)
+    
 
-# Melodía en función del tempo t
 def melodia(t):
+    """
+    Interpreta la melodía con un tempo determinado.
+    """
     # Duraciones en función del tempo
     pulso = 60000/t
     duracion_nota = int(2/3*pulso)
@@ -61,6 +70,7 @@ def melodia(t):
     silencio(duracion_silencio)
     nota(MI, duracion_nota)
     silencio(duracion_silencio)
+
 
 while True:
     while tempo <= TEMPO_MAX:

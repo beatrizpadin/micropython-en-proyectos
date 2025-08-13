@@ -95,16 +95,23 @@ korobeiniki_duracion = [
     blanca, blanca                                      # Compás 16
     ]
 
-# Nota musical
-def nota(frecuencia, tiempo):
+
+def nota(frecuencia, duracion):
+    """
+    Interpreta una nota musical dada la frecuencia y la duración.
+    """
     ALTAVOZ.duty_u16(32768)
     ALTAVOZ.freq(frecuencia)
-    sleep_ms(tiempo)
+    sleep_ms(duracion)
 
-# Silencio
-def silencio(tiempo):
+
+def silencio(duracion):
+    """
+    Interpreta un silencio de una duración determinada.
+    """
     ALTAVOZ.duty_u16(0)
-    sleep_ms(tiempo)
+    sleep_ms(duracion)
+    
 
 # Se interpreta la melodía
 for i in range(len(korobeiniki_tono)):
